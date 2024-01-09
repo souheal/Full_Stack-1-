@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Jost', sans-serif;
+    /* Background image with cover */
+
+    background: url(images2/wp7878167-retrowave-aesthetic-car-wallpapers.jpg) no-repeat center / cover;
+    background-repeat: no-repeat;
+
+}
+.alert{
+    color: rgb(41, 188, 41);
+    padding: 2px;
+    margin-left: 10PX;
+}
+.error-message{
+    color:red;
+    padding: 1px;
+    margin-left: 10PX;
+}
+.container {
+    width: 350px;
+    height: 500px;
+    /* Dark background color for the container */
+
+    background-color: rgb(1, 33, 41);
+    overflow: hidden;
+    border-radius: 10px;
+    /* Box shadow for a subtle lift */
+    box-shadow: 5px 30px 50px black;
+}
+
+#check {
+    display: none;
+}
+
+.signup {
+    
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+label {
+    color: white;
+    /* Light text color for labels */
+
+    font-size: 2.3em;
+    display: flex;
+    justify-content: center;
+    margin: 60px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+
+input {
+    width: 60%;
+    height: 20px;
+    /* Light background color for input fields */
+    
+    background: white;
+    justify-content: center;
+    display: flex;
+    margin: 20px auto;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+}
+
+button {
+    width: 100%;
+    height: 40px;
+    justify-content: center;
+    display: block;
+    margin: 10px auto;
+    color: white;
+    /* Button background color */
+
+    background: rgb(21, 133, 43);
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    transition: .2s ease-in;
+    cursor: pointer;
+}
+
+button:hover {
+    /* Hover color for the button */
+
+    background-color: rgb(23, 82, 36);
+}
+
+.login {
+    height: 460px;
+    /* Background color for  login form */
+
+    background: #8a0606;
+    border-radius: 60% /10%;
+    transform: translateY(-180px);
+    transition: .8s ease-in-out;
+}
+
+.login label {
+    color: white;
+    transform: scale(.6);
+}
+
+#check:checked~.login {
+    /* Slide up effect for login form */
+
+    transform: translateY(-500px);
+}
+
+#check:checked~.login label {
+
+    transform: scale(1);
+}
+
+#check:checked~.signup label {
+    /* Scale down effect for labels when switching to login form */
+
+    transform: scale(.6);
+}
+
+
+
+
+
+
+
+

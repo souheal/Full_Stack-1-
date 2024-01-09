@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;1,400&family=Quicksand:wght@300;400;500;600;700&family=Roboto:ital@1&family=Ubuntu:ital@1&display=swap');
+
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+#login-btn .btn a {
+    text-decoration: none;
+    font-size: large;
+    color: black;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    background: red;
+    color: black;
+    font-weight: 500;
+    font-size: 1.7rem;
+    cursor: pointer;
+    padding: .8rem 3rem;
+
+}
+
+.btn:hover {
+    background: rgb(239, 10, 10);
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 9%;
+
+}
+
+.header .logo {
+    font-size: 2.5rem;
+    color: black;
+    font-weight: bolder;
+}
+
+.header .logo span {
+    color: red;
+}
+
+.header .navbar a {
+    font-size: 1.7rem;
+    margin: 0 1rem;
+    color: black;
+}
+
+.header .navbar a:hover {
+    color: red;
+
+}
+.header .btn {
+    margin-top: 0;
+}
+
+.header #login-btn i {
+    display: none;
+    font-size: 2.5rem;
+    color: red;
+    cursor: pointer;
+}
+
+#menu-btn {
+    font-size: 2.5rem;
+    color: rgb(162, 140, 140);
+    cursor: pointer;
+    display: none;
+}
+
+.header.active {
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    padding: 2rem;
+}
+
+/* ////////////////////// homePart */
+
+
+
+
+/* ///////////////////popular vehicles/////////// */
+.heading {
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size: 4.5rem;
+    color: black;
+
+}
+
+.heading span {
+    color: rgb(130, 36, 36);
+}
+
+
+
+
+@media(max-width:980px) {
+    html {
+        font-size: 55%;
+    }
+
+    .header {
+        padding: 2rem;
+    }
+
+    .header.active {
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+        padding: 2rem;
+    }
+
+    .home-part {
+        padding: 2rem;
+    }
+
+}
+
+
+
+
+
+@media(max-width:877px) {
+    .header #login-btn i {
+        display: block;
+    }
+
+    #menu-btn {
+        display: block;
+        
+    }
+
+    #menu-btn.fa-times {
+        transform: rotate('180deg');
+    }
+
+    .header .navbar {
+        position: absolute;
+        top: 99%;
+        left: 0;
+        right: 0;
+        background: white;
+        border-top: 1rem solid rgba(0, 0, 0, 0.1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .header #login-btn .btn {
+        display: none;
+    }
+
+    .header .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    .header .navbar a {
+        display: block;
+        margin: 1rem;
+        font-size: 2rem;
+
+    }
+}
+
+
+
+.car-details-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.car-details {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.car-details th, .car-details td {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.car-details th {
+    background-color: #f8f8f8;
+}
+
+.car-image {
+    width: 100%;
+    max-width: 300px; /* Adjust the size of the image */
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    border-radius: 4px;
+}
+
+/* Header Styles */
+.header {
+    background:white ;
+    color: #ff0000;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.header a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Navbar Styles */
+.navbar a {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Adjust the button style */
+
+
+
+@media(max-width:450px) {
+    html {
+        font-size: 50%;
+    }
+
+    .heading {
+        font-size: 3rem;
+    }
+}
+
+@media(max-width:450px) {
+    html {
+        font-size: 50%;
+    }
+
+    .heading {
+        font-size: 3rem;
+    }
+    
+}
+
