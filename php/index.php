@@ -487,7 +487,7 @@ include 'databaseSign.php';
 
         </div>
         <div class="credit">
-            Create By Souheal.CR7 & Aziz & Barhome | All Rights Reserved
+            Create By Souheal | All Rights Reserved
         </div>
     </div>
 
